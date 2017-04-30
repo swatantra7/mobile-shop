@@ -60,4 +60,5 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  get 'pages/home' => 'high_voltage/pages#show', id: 'home'
 end
