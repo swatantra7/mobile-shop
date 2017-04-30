@@ -22,7 +22,7 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise', '~> 3.4.0'
-gem 'bootstrap-sass', '3.1.0'
+gem 'bootstrap-sass', '3.2.0.2'
 gem 'high_voltage', '~> 3.0.0'
 gem 'devise-bootstrap-views'
 gem 'devise-i18n-views'

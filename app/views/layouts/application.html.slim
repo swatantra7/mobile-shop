@@ -2,7 +2,7 @@ doctype html
 html
   head
     meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
-    title DeviseBootstrapViews
+    title MOBILE SHOP
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
@@ -11,21 +11,28 @@ html
       .top-bar
   	    nav.navbar.navbar-default
   	      .container-fluid
-  	        #bs-example-navbar-collapse-1.collapse.navbar-collapse
-  	          ul.nav.navbar-nav.navbar-right
-  	            - if user_signed_in?
-  	              li
-  	                = link_to('Logout', destroy_user_session_path, :method => :delete)
-  	            - else
-  	              li
-  	                = link_to('Login', new_user_session_path)
-              - if user_signed_in?
-                - cache do
-                  = render partial: 'layouts/navigation'
+	          ul.nav.navbar-nav.navbar-right
+	            - if user_signed_in?
+	              li
+	                = link_to  glyph('logout') + " Logout",
+                    destroy_user_session_path, method: :delete
+	            - else
+	              li
+	                = link_to  glyph('login') + " Login",
+                    new_user_session_path
+          - if user_signed_in?
+            - cache do
+              = render partial: 'layouts/navigation'
     .page-content
       .container
         = flash_messages
         .col-md-offset-2.col-md-8
           = yield
+    .footer.space-20
+      .container.no-padding
+        .col-md-6.no-padding.col-xs-7.col-sm-8
+          small.copyright Copyright © MOBILE SHOP, All Rights Reserved
+        .pull-right
+          span MOBILE SHOP
 
  

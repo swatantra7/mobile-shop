@@ -12,4 +12,17 @@ module ApplicationHelper
 	   end
 	   nil
 	end
+
+	def glyph(*names)
+    content_tag :i, nil, class: glyph_class(*names)
+  end
+
+  def glyph_class(*names)
+    if names.include?('login')
+      'glyphicon glyphicon-log-in'
+    else
+      'glyphicon glyphicon-log-out'
+    end
+  end
+
 end

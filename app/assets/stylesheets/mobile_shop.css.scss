@@ -1,0 +1,74 @@
+//colors
+$light-green: #657589;
+$elan-blue: #A52A2A;
+$catskill-white: #eff3f7;
+$wild-sand: #f2f4f7;
+$geyser: #d8dee8;
+$celeste: #cccccc;
+$white: #ffffff;
+$regent-gray: #FFA500;
+$slate-gray: #708193;
+$alto: #dddddd;
+$surf-crest: #d6e3d3;
+
+html {
+  min-height: 100%;
+  position: relative;
+  body {
+    background-color: $wild-sand;
+  }
+}
+
+.header {
+  .top-bar {
+    background-color: $elan-blue;
+  }
+  .main-nav {
+    background-color: $white;
+    border-bottom: 2px solid $catskill-white;
+    .nav-item {
+      border-left: 1px solid $catskill-white;
+      font-size: 10px;
+    }
+  }
+}
+
+.page-content {
+  padding-top: 62px;
+
+  .container {
+    border: 0px solid $surf-crest;
+    height: auto;
+    padding: 0;
+    margin-bottom: 40px;
+    background-color: $wild-sand;
+    form {
+      h4 {
+        color: $wild-sand;
+      }
+      label {
+        color: $light-green;
+        text-align: left;
+      }
+    }
+    
+  }
+}
+
+.space-20 {
+  padding: 20px 0;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: $elan-blue;
+  .copyright, span {
+    color: $regent-gray;
+  }
+}
+
+.no-padding {
+  padding: 0;
+}

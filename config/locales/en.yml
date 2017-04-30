@@ -21,3 +21,9 @@
 
 en:
   hello: "Hello world"
+
+  navigation:
+    home: 'Home'
+    mobile: 'Mobiles'
+    compare: 'Compare'
+    about_us: 'About Us'
