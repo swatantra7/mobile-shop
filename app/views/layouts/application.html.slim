@@ -1,10 +1,10 @@
 doctype html
 html
   head
-    meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" /
+    meta content=("harset=UTF-8") http-equiv="Content-Type" /
     title MOBILE SHOP
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
-    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application'
     = csrf_meta_tags
   body
   	header.header
@@ -16,6 +16,7 @@ html
 	              li
 	                = link_to  glyph('logout') + " Logout",
                     destroy_user_session_path, method: :delete
+                  = render 'layouts/headers'
 	            - else
 	              li
 	                = link_to  glyph('login') + " Login",
@@ -34,5 +35,3 @@ html
           small.copyright Copyright © MOBILE SHOP, All Rights Reserved
         .pull-right
           span MOBILE SHOP
-
- 

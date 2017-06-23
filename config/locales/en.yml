@@ -27,3 +27,18 @@ en:
     mobile: 'Mobiles'
     compare: 'Compare'
     about_us: 'About Us'
+    activity: 'Activity'
+  topics:
+    index:
+      topic: 'Topic'
+      add_new_topic: 'Add new Topic'
+  users:
+    new:
+      add_new_user: 'Add New User'
+  general:
+    ref_id: 'Reference Id'
+    description: 'Description'
+    name: 'Name'
+    duration: 'Duration'
+    action: 'Action'
+    submit: 'Submit'

@@ -1,0 +1,7 @@
+= form_for @mobile do |f|
+	= f.file_field :mobile_list
+	.row
+		.col-sm-3
+			= f.submit I18n.t('general.submit'), class: 'btn btn-success'
+		.col-sm-3
+			= link_to 'Back', topics_path, rel: "modal:close", class: 'btn btn-danger'

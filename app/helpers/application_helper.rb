@@ -17,6 +17,11 @@ module ApplicationHelper
     content_tag :i, nil, class: glyph_class(*names)
   end
 
+  def cart_glyph
+    content_tag :i, nil, class: 'fi-shopping-cart'
+  end
+
+
   def glyph_class(*names)
     if names.include?('login')
       'glyphicon glyphicon-log-in'

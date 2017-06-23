@@ -11,8 +11,16 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
+gem 'jquery-turbolinks', '2.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+
+gem 'bootstrap-wysihtml5-rails', '0.3.3.7'
+gem 'foundation-rails'
+
+gem "paperclip", "~> 5.0.0"
+gem 'redis', '~> 3.0.1'
+gem 'hiredis', '~> 0.6.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -27,12 +35,18 @@ gem 'high_voltage', '~> 3.0.0'
 gem 'devise-bootstrap-views'
 gem 'devise-i18n-views'
 gem 'simple-navigation-bootstrap'
+gem 'bootstrap_form', '2.3.0'
 gem "slim-rails"
 gem 'execjs'
+gem "haml-rails", "~> 0.9"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'therubyracer'
 gem 'turbolinks'
+
+
+  gem 'jquery-ui-rails'
+  gem 'jquery-modal-rails'
 
 # Use Unicorn as the app server
 # gem 'unicorn'

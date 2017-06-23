@@ -1,0 +1,16 @@
+.row
+  .col-md-9.col-md-offset-1
+    = bootstrap_form_for @user, validate: true, url: create_user_path,
+        layout: :horizontal,
+        label_col: 'col-md-3', control_col: 'col-md-7' do |f|
+      .space-20.users
+        = f.fields_for :people do |person_builder|
+          = person_builder.text_field :first_name
+          = person_builder.text_field :last_name
+        = f.text_field :email
+        .space-20
+        = f.form_group
+          .pull-right
+            = link_to t('general.cancel'), users_path, class: 'btn btn-danger btn-sm'
+            |&nbsp;
+            = f.submit t('general.submit'), class: 'btn btn-success btn-sm'
