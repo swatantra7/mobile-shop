@@ -1,0 +1,17 @@
+= form_for @topic do |f|
+	.space-300
+		h4
+			= t('.topic')
+		.row.space-20
+			label.col-md-5.control-label.required #{t('general.name')}:
+			.col-sm-5
+				= f.text_field :name
+		.row.space-20
+			label.col-md-5.control-label.required #{t('general.description')}:
+			.col-sm-5
+				= f.text_area :description
+		.row
+			.col-sm-3
+				= f.submit I18n.t('general.submit'), class: 'btn btn-success'
+			.col-sm-3
+				= link_to 'Back', topics_path, rel: "modal:close", class: 'btn btn-danger'

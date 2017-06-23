@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 # Configures your navigation
 SimpleNavigation::Configuration.run do |navigation|
+	navigation.autogenerate_item_ids = false
+	navigation.selected_class = 'active'
   navigation.items do |primary|
-    primary.item :home, I18n.t('navigation.home'), page_path('home')
-    primary.item :mobile, I18n.t('navigation.mobile'), '#'
-    primary.item :compare, I18n.t('navigation.compare'), '#'
-    primary.item :about, I18n.t('navigation.about_us'), page_path('about')
+    primary.item :topic,:Topic,  topics_path
+    primary.item :user, :User, users_path
+    primary.item :mobile, :Mobile, mobiles_path
    	primary.dom_class = 'nav navbar-nav'
     primary.dropdown = true
-    primary.split = false
   end
 end

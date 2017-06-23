@@ -15,7 +15,7 @@ html {
   min-height: 100%;
   position: relative;
   body {
-    background-color: #EEE8AA;
+    background-color: $white;
   }
 }
 
@@ -41,7 +41,7 @@ html {
     height: auto;
     padding: 0;
     margin-bottom: 40px;
-    background-color: #EEE8AA;
+    background-color: $white;
     form {
       h4 {
         color: $wild-sand;
@@ -59,6 +59,10 @@ html {
   padding: 20px 0;
 }
 
+.space-0 {
+  padding: 0px 0;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -69,6 +73,29 @@ html {
   }
 }
 
+.space-300 {
+  padding: 300px 0;
+}
+
 .no-padding {
   padding: 0;
+}
+
+navbar {
+  margin-bottom: 50px;
+  border-radius: 0;
+}
+    
+.jumbotron {
+  margin-bottom: 30px;
+}
+   
+.mob-footer {
+  background-color: #f2f2f2;
+  padding: 25px;
+}
+
+.image-size {
+  width: 304px;
+  height: 236px
 }

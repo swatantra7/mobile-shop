@@ -10,9 +10,13 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery-2.0.3.min
+//= require bootstrap.min
+//= require bootstrap-table
+//= require bootstrap-wysihtml5
+//= require bootstrap-sprockets
+//= require jquery.modal
+//= require jquery-ui
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require bootstrap.min
-//= require bootstrap-sprockets
 //= require_tree .

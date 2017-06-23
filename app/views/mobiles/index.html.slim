@@ -1,0 +1,9 @@
+.row
+	- @mobiles.each do |mobile|
+	  .col-sm-4
+	    .panel.panel-primary
+	      .panel-heading = mobile.id
+        .panel-body
+      		= link_to (image_tag(mobile.mobile_list.url)), mobile, class: 'image-size'
+	      	.panel-footer
+	      		= link_to t('.buy_now'), '#'

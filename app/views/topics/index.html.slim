@@ -1,0 +1,33 @@
+.space-20
+h4.text-center = t('.topic')
+.table-wrapper
+  .row
+    .col-md-12
+      .pull-right
+        = link_to_modal 'New Topic', new_topic_path, class: 'btn btn-success', id: 'hello'
+  .space-20
+  .table-responsive
+    table.table.table-bordered.table-striped#bootstrap-table
+      thead
+        tr
+          th data-sortable='true' #{I18n.t('general.ref_id')}
+          th data-sortable='true' #{I18n.t('general.description')}
+          th data-sortable='true' #{I18n.t('general.name')}
+          th data-sortable='true' #{I18n.t('general.duration')}
+          th data-sortable='true' #{I18n.t('general.action')}
+      tbody
+        - @topics.each do |topic|
+          tr
+            td = topic.id
+            td = topic.description
+            td = topic.name
+            td = topic.created_at
+            td = link_to "#{topic.name}", '#'
+
+
+
+        
+
+
+
+

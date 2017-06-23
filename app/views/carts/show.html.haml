@@ -1,0 +1,7 @@
+.h3 
+  = "#{current_user.cart_count}"
+- @cart_mobiles.each do |mobile|
+  .row
+    = image_tag mobile.mobile_list.url, class: 'radius-l1'
+
+

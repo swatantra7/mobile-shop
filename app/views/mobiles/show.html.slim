@@ -1,0 +1,9 @@
+.col-sm-5
+  = image_tag @mobile.mobile_list.url
+.col-sm-7
+  h3 
+    = @mobile.moble_name
+= link_to "", class: "button", data: {target: @cart_action, addUrl: add_to_carts_path(@mobile),
+	removeUrl: remove_from_carts_path(@mobile)}
+	span
+		= @cart_action
